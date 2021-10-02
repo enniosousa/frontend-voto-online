@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container col-xl-10 col-xxl-8 p-2">
+      <div class="row align-items-center g-lg-5 py-3">
+        <div class="col-lg-6 text-center text-lg-start">
+          <div class="text-center">
+            <img
+              class="d-block mx-auto mb-4"
+              src="https://educacao.rs.gov.br/matriz_common/images/logos/simbolo_RS.png"
+              alt="Brasão da Secretaria de Educação do Estado do Rio Grande do Sul"
+            />
+            <h1 class="fw-bold">SECRETARIA DA EDUCAÇÃO</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                Eleições para direção das escolas estaduais do Rio Grande do
+                Sul.
+              </p>
+            </div>
+          </div>
+        </div>
+        <style>
+          .selected-vote {
+            border-left: 1rem solid green;
+          }
+        </style>
+        <div class="col-md-10 mx-auto col-lg-6">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="row row-cols-1 g-4">
+              <!-- vote option -->
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="vote"
+                  value="1"
+                  id="chapa_1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-info card h-100" for="chapa_1">
+                  <div class="card-body">
+                    <h5
+                      class="
+                        card-title
+                        display-6
+                        fw-bold
+                        text-center text-black
+                      "
+                    >
+                      CHAPA 1
+                    </h5>
+                  </div>
+                </label>
+              </div>
+              <!-- /vote option -->
+
+              <!-- vote option -->
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="vote"
+                  value="2"
+                  id="chapa_2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-info card h-100" for="chapa_2">
+                  <div class="card-body">
+                    <h5
+                      class="
+                        card-title
+                        display-6
+                        fw-bold
+                        text-center text-black
+                      "
+                    >
+                      CHAPA 2
+                    </h5>
+                  </div>
+                </label>
+              </div>
+              <!-- /vote option -->
+
+              <!-- vote option -->
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="vote"
+                  value="branco"
+                  id="chapa_branco"
+                  autocomplete="off"
+                />
+                <label class="btn btn-secundary card h-100" for="chapa_branco">
+                  <div class="card-body">
+                    <h5
+                      class="
+                        card-title
+                        display-6
+                        fw-bold
+                        text-center text-black
+                      "
+                    >
+                      BRANCO
+                    </h5>
+                  </div>
+                </label>
+              </div>
+              <!-- /vote option -->
+            </div>
+            <button
+              type="submit"
+              class="btn btn-success py-3 mt-5 w-100"
+              value="9"
+            >
+              <span class="display-6 fw-bold"
+                ><i class="fas fa-vote-yea d-block"></i>
+                <span class="d-block">CONFIRMA</span></span
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
